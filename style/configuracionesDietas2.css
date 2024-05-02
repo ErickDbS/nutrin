@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2980b9, #6dd5fa);  
+}
+
+
+
+h1 {
+    margin-left: 600px;
+    margin-top: 200px;
+    background: linear-gradient(to right, #cfdce4, #0b2e3a); /* gradiente */
+    -webkit-background-clip: text; /* para aplicar el gradiente al texto */
+    -webkit-text-fill-color: transparent; /* para hacer transparente el color del texto */
+    background-size: 200% auto; /* tamaño del gradiente */
+    animation: cambiaColor 3s infinite alternate; /* animación */
+}
+
+@keyframes cambiaColor {
+    0% {
+        background-position: left; /* posición inicial */
+    }
+    100% {
+        background-position: right; /* posición final */
+    }
+}
+
+
+.contenedor {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.imagen {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid greenyellow;
+}
+
+.imagen img {
+    display: block;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imagen:hover img,
+.imagen.seleccionada img {
+    transform: scale(1.1);
+}
+
+.imagen:hover .descripcion,
+.imagen.seleccionada .descripcion {
+    opacity: 1;
+}
+
+
+
+#Continuar {
+    margin-top: 20px;
+    margin-left: 700px;
+    width: 200px;
+    background: linear-gradient(to right, rgb(107, 248, 0), yellow);
+    border-radius: 100px;
+    height: 50px;
+    font-size: 15px;
+    color: black;
+}
+
+#Continuar:hover{
+    background: linear-gradient(to right, rgb(78, 179, 1), rgb(165, 165, 0));
+
+}

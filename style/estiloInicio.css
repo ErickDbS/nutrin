@@ -1,0 +1,63 @@
+.body-inicio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+
+#blanco {
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 5px;
+    width: 95%;
+}
+
+#dia {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.circle {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Hace el elemento circular */
+    border-style: solid;
+    /* Define el box-shadow con degradado lineal de arcoíris */
+    box-shadow: 0 0 15px 10px;
+    animation: arcoiris 3s infinite;
+}
+
+
+.numCalorias, .textCalorias{
+    text-align: center;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.macros{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: white; */
+    margin: 20px;
+} 
+
+/* 
+.text-color {
+    background-color: #1679AB;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+
+
+
+*/

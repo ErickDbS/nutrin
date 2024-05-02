@@ -1,0 +1,66 @@
+details {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+  
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+details[open] {
+    padding: 0.5em;
+}
+  
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+.detalles {
+    display: grid;
+    gap: 1rem;
+    max-width: 95%;
+}
+
+.usuario-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#contraUsuario {
+    display: grid;
+    gap: 0.1rem;
+    margin: 15px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: lightblue; /* Color descolorido cuando está deshabilitado */
+    opacity: 0.5; /* Reducir la opacidad para un efecto descolorido */
+    cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+}
+
+#numeroTelefono {
+    display: grid;
+    gap: 0.1rem;
+    margin: 15px;
+}

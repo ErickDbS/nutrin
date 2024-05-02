@@ -1,0 +1,92 @@
+.filtros {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    margin: 20px 0px 0px 300px;
+    max-width: 73%;
+    background-color: rgba(83, 93, 202, 0.5);
+    border-radius: 5px;
+}
+
+.filtro-color {
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
+    max-width: 100%;
+    gap: 10px;
+}
+
+header {
+    border-bottom: 3px solid black;
+    margin-bottom: 2px;
+    height: 50px;
+    padding: 5px;
+}
+
+.info-filtros {
+    margin: 20px 10px;
+}
+
+.info-filtros select {
+    border-radius: 5px;
+}
+
+/* Estilos para el contenedor de productos */
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    margin: 20px 0px 0px 300px;
+    max-width: 73%;
+    background-color: rgba(83, 93, 202, 0.5);
+    border-radius: 5px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.producto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen del producto */
+.producto img {
+    width: 100%; /* La imagen se adapta al ancho del contenedor */
+    height: 100px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* La imagen se recorta para llenar el contenedor y mantener la proporción */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.producto-info {
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ejemplo {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+

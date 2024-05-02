@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2980b9, #6dd5fa);  
+    }
+
+  nav {
+    background: linear-gradient(to right, #2980b9, #6dd5fa);  
+    color: #fff;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  li a:hover {
+    background: linear-gradient(to right, #2980b9, #6dd5fa);  
+  }
+
+.producto {
+    display: flex;
+    margin: 20px;
+    background: linear-gradient(to right, #2980b9, #6dd5fa); 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Para evitar problemas de alineación */
+}
+
+.producto-imagen {
+    width: 200px; /* Establece un tamaño fijo para la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    flex-shrink: 0; /* Evita que la imagen se reduzca cuando el contenedor es pequeño */
+}
+
+.producto-info {
+    padding: 20px;
+    flex-grow: 1; /* Hace que ocupe el espacio restante */
+}
+
+.producto-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.producto-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.accion {
+    margin-top: 20px;
+}
+
+.accion label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btnAgregar{
+    font-family: sans-serif;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left:50px;
+    color: white;
+    background-color: #0066c0;
+}
+
+.btnAgregar:hover{
+    background-color: #0c5b9f;
+}
+
+#cantidad{
+    width: 50px;
+    text-align: center;
+}
+
